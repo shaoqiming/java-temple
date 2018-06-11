@@ -7,13 +7,26 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-	<context:property-placeholder location="classpath*:db.properties"/>  
-	
+	<!-- 只能读取一个配置文件 -->
+	<!-- <context:property-placeholder location="classpath*:db.properties" /> -->
+
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:dev/db.properties</value>
+		</property>
+	</bean>
+
+
 	<mvc:annotation-driven />
 
-	<context:component-scan base-package="com.right.*" />
-
+	<context:component-scan base-package="com.right.web.controller" />
+	<context:component-scan base-package="org.Right.Service" />
+	<context:component-scan base-package="org.Right.Api.Entity.Mapper" />
+	
+	
 	<!-- 引入其他文件配置文件 -->
-	<!-- <import resource=""/> -->
-
+	<import resource="classpath:Spring-dataSource.xml" />
+	<import resource="classpath:Spring-mybatis.xml" />
 </beans>

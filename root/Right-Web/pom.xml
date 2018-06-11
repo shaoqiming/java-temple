@@ -62,6 +62,13 @@
 			<artifactId>Right-Service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.shaoqi.Right1</groupId>
+			<artifactId>Right-Api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+
 	</dependencies>
 	<build>
 		<finalName>Right-Web</finalName>

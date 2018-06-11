@@ -9,7 +9,7 @@
 
 
 
-	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+	<bean id="druiddataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<property name="driverClassName" value="${database.className}" />
 		<property name="url" value="${database.url}" />
