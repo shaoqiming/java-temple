@@ -1,0 +1,10 @@
+alter table `right_menu_org` add `create_time`  datetime NULL DEFAULT NULL COMMENT '创建时间';
+alter table `right_menu_org` add `create_user`  varchar(50) NULL DEFAULT NULL COMMENT '创建人员';
+alter table `right_menu_org` add `create_org`  varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '创建组织';
+alter table `right_menu_org` add `update_time`  datetime NULL DEFAULT NULL COMMENT '更新时间';
+alter table `right_menu_org` add `update_user`  varchar(50) NULL DEFAULT NULL  COMMENT '更新人员' ;
+alter table `right_menu_org` add `update_org`  varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '更新组织' ;
+alter table `right_menu_org` add `delete_time`  datetime NULL DEFAULT NULL COMMENT '删除时间' ;
+alter table `right_menu_org` add `delete_user`  varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '删除人员' ;
+alter table `right_menu_org` add `is_delete`  int(11) NULL DEFAULT NULL COMMENT '删除标志';
+alter table `right_menu_org` add `org_code`  varchar(200) NULL DEFAULT NULL COMMENT '所属组织' ;
