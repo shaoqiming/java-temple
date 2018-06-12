@@ -9,7 +9,7 @@
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="druiddataSource"></property>
-		<!-- <property name="configLocation" value="classpath:dev/mybatis.xml"></property> -->
+		<property name="configLocation" value="classpath:dev/mybatis.xml"></property>
 		<property name="mapperLocations" value="classpath*:sq-mappers/**/*.xml"></property>
 	</bean>
 
