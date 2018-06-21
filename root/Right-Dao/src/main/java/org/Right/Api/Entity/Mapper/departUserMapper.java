@@ -2,6 +2,8 @@ package org.Right.Api.Entity.Mapper;
 
 import org.Right.Api.Entity.departUser;
 import org.Right.Api.Entity.departUserExample;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface departUserMapper {

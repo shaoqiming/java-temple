@@ -1,7 +1,7 @@
 package org.Right.Api.Entity.Mapper;
 
-import entity.RightRole;
-import entity.RightRoleExample;
+import org.Right.Api.Entity.RightRole;
+import org.Right.Api.Entity.RightRoleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
